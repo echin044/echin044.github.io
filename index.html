@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+    <title>Questionnaire</title>
+  </head>
+  
+  <body>
+	<h1>Survey of Valorant Website User Interface</h1>
+	<form id="myform" action="index.php" >
+	<h2>What do you think of the UI in this <a href="https://playvalorant.com/en-us/">Valorant</a> site?</h2>	
+	<img src="Valorant-FrontPage.png" alt="Valorant Front Page" width="450" height="300">	
+		
+	<div class="question">
+		<h2> Personal Information </h2>
+		<form>
+			<label for="fname">First name:</label><br>
+  			<input type="text" id="fname" name="fname"><br>
+  			<label for="lname">Last name:</label><br>
+  			<input type="text" id="lname" name="lname"><br>
+  			<label for="email">Email:</label><br>
+  			<input type="text" id="email" name="email"><br>
+		</form>
+
+		<h2> Questions </h2>
+		
+		<h3>Select the device on which you are completing the survey on.</h3>
+		<select id="device" name="device">
+			<option value="Desktop">Desktop</option>
+			<option value="Laptop">Laptop</option>
+			<option value="Tablet">Tablet</option>
+			<option value="Smartphone">Smartphone</option>
+		</select>
+		
+		<h3>Do you like the website?:</h3> 
+		<form>
+			<input type="radio" id="Opinion1" name="Opinion1" value="Yes">
+			<label for="Opinion1">Yes</label><br>
+			<input type="radio" id="Opinion2" name="Opinion2" value="No">
+			<label for="Opinion2">No</label><br>
+		</form>
+
+		<h3>Based on the screenshot provided, please share your initial impressions of the website's user interface. 
+			Are there specific aspects that stand out to you positively or negatively?</h3>
+		<textarea rows="5" cols="50"></textarea>
+		<br>
+
+		<h3>How would you rate the visual clarity of the website?:</h3> 
+		<form>
+			<input type="radio" id="Rating1" name="Rating1" value="Excellent">
+			<label for="Rating1">Excellent</label><br>
+			<input type="radio" id="Rating2" name="Rating2" value="Good">
+			<label for="Rating2">Good</label><br>
+			<input type="radio" id="Rating3" name="Rating3" value="Average">
+			<label for="Rating3">Average</label><br>
+			<input type="radio" id="Rating4" name="Rating4" value="BelowAverage">
+			<label for="Rating4">Below Average</label><br>
+			<input type="radio" id="Rating5" name="Rating5" value="Poor">
+			<label for="Rating5">Poor</label><br>
+		</form>
+		
+		
+		<h3>Select the aspects of the website that you find most appealing?:</h3> 
+		<form>
+			<input type="checkbox" id="answer1" name="answer1" value="ColorContrast">
+			<label for="answer1">Color Contrast</label><br>
+			<input type="checkbox" id="answer2" name="answer2" value="Readability">
+			<label for="answer2">Readability</label><br>
+			<input type="checkbox" id="answer3" name="answer3" value="Navigation">
+			<label for="answer3">Clear Navigation Cues</label><br>
+			<input type="checkbox" id="answer4" name="answer4" value="Layout">
+			<label for="answer4">Overall Layout</label><br>
+		</form>
+		
+		<h3>Is there any improvements that can be made to the website? 
+			If so, what improvements would you make?
+		</h3>
+		<textarea rows="5" cols="50"></textarea>
+		
+		<h3>Would you explore beyond the front page of the website?:</h3> 
+		<form>
+			<input type="radio" id="option1" name="option1" value="Yes">
+			<label for="option1">Yes</label><br>
+			<input type="radio" id="option2" name="option2" value="No">
+			<label for="option2">No</label><br>
+		</form>
+
+		<h3>Comments:</h3>
+		<textarea rows="5" cols="50"></textarea>
+	</div>
+			
+	<br>
+		
+	<button id="submitButton" type="button" class="block">
+		SUBMIT your questionnaire
+	</button>
+	
+	<div class="signature">
+		<p id="signature">Site created by Jason Shum and Erik Chin</p>
+	</div>
+
+  </body>
+</html> 
